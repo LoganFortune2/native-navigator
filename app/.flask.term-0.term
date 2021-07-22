@@ -2962,4 +2962,743 @@ error: pathspec 'app/yolo/yolo.weights' did not match any file(s) known to git
 error: pathspec 'app/yolo/yolov4_last.weights' did not match any file(s) known to git
 ]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ git restore --staged app/yolo/yolov4_last.weights[C[C[C[C[1P.weights[1P.weights[1P.weights[1P.weightsf.weightsi.weightsn.weightsa.weightsl.weights
 error: pathspec 'app/yolo/yolov4_final.weights' did not match any file(s) known to git
-]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ 
+]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ cd ..
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git add .
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git add .[4Pcd ..git restore --staged app/yolo/yolov4_final.weights[C
+error: pathspec 'app/yolo/yolov4_final.weights' did not match any file(s) known to git
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git restore --staged app/yolo/yolov4_final.weights[1P.weights[1P.weights[1P.weights[1P.weights[1P.weightsl.weightsa.weightss.weightst.weights
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git commit -m "ready for production deployment"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'a393710e7e6247f1abc5305c9c32e179@bb93b0192b7c.(none)')
+]0;~/native-navigator[01;34m~/native-navigator[00m$ [K]0;~/native-navigator[01;34m~/native-navigator[00m$ git config[K]0;~/native-navigator[01;34m~/native-navigator[00m$ git config[K]0;~/native-navigator[01;34m~/native-navigator[00m$ git config --global user.email "loganfortune@tamu.edu
+> "
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git config --global user.email "loganfortune@tamu.edu
+"[C[K[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git config --global user.email "loganfortune@tamu.edu"[1P "loganfortune@tamu.edu"[1P "loganfortune@tamu.edu"[1P "loganfortune@tamu.edu"[1P "loganfortune@tamu.edu"[1P "loganfortune@tamu.edu"n "loganfortune@tamu.edu"a "loganfortune@tamu.edu"m "loganfortune@tamu.edu"e "loganfortune@tamu.edu"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"L"o"g"a"n" "F"o"r"t"u"n"e"
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git commit -m "ready for production deployment"
+[master 226d4be] ready for production deployment
+ 86 files changed, 12683 insertions(+), 2518 deletions(-)
+ create mode 100644 app/.flask.term-0.term
+ create mode 100644 app/flask.term
+ create mode 100644 app/images/099317.png
+ create mode 100644 app/images/1.jpg
+ create mode 100644 app/images/2.jpg
+ create mode 100644 app/images/3_stop.jpg
+ create mode 100644 app/images/81dhrXbZyDL._AC_SL1500_.jpg
+ create mode 100644 app/images/AM_Acceptance_1.jpg
+ create mode 100644 app/images/Bird-Dog-Traffic-Control-Most-Common-Road-Signs-You-Should-Know.jpg
+ create mode 100644 app/images/DSCF3462.jpg
+ create mode 100644 app/images/DoNotEnter.jpg
+ create mode 100644 app/images/FinalRoadWork.png
+ create mode 100644 app/images/JustinStop2.jpg
+ create mode 100644 app/images/YeildMain.jpg
+ create mode 100644 app/images/oneway.jpeg
+ create mode 100644 app/images/right-turn-only-sign-x-r3-5r.png
+ create mode 100644 app/images/stop_right.png.jpg
+ create mode 100644 app/images/stopsign.jpg
+ create mode 100644 app/images/two-stop-signs-at-an-intersection-in-sag-harbor-ny-G8WCBB.jpg
+ create mode 100644 app/images/two_stop.jpg
+ create mode 100644 app/images/winding_road1.jpg
+ create mode 100644 app/images/yeildCropped4.jpg
+ create mode 100644 app/images/yolo_099317.png
+ create mode 100644 app/images/yolo_1.jpg
+ create mode 100644 app/images/yolo_2.jpg
+ create mode 100644 app/images/yolo_3_stop.jpg
+ create mode 100644 app/images/yolo_81dhrXbZyDL._AC_SL1500_.jpg
+ create mode 100644 app/images/yolo_DSCF3462.jpg
+ create mode 100644 app/images/yolo_DoNotEnter.jpg
+ create mode 100644 app/images/yolo_FinalRoadWork.png
+ create mode 100644 app/images/yolo_JustinStop2.jpg
+ create mode 100644 app/images/yolo_YeildMain.jpg
+ create mode 100644 app/images/yolo_oneway.jpeg
+ create mode 100644 app/images/yolo_right-turn-only-sign-x-r3-5r.png
+ create mode 100644 app/images/yolo_stop_right.png.jpg
+ create mode 100644 app/images/yolo_stopsign.jpg
+ create mode 100644 app/images/yolo_two-stop-signs-at-an-intersection-in-sag-harbor-ny-G8WCBB.jpg
+ create mode 100644 app/images/yolo_two_stop.jpg
+ create mode 100644 app/images/yolo_winding_road1.jpg
+ create mode 100644 app/images/yolo_yeildCropped4.jpg
+ create mode 100644 app/static/Blog-Template.css
+ rewrite app/static/Home.css (99%)
+ create mode 100644 app/static/Post-Template.css
+ create mode 100644 app/static/images/1.jpeg
+ create mode 100644 app/static/images/12b467_a4ceef0f338c41c7885cb083ea36a00f_mv2_d_1742_1743_s_2.png
+ create mode 100644 app/static/images/2.jpeg
+ create mode 100644 app/static/images/3.jpeg
+ create mode 100644 app/static/images/Antonio_upload.jpg
+ create mode 100644 app/static/images/Druthi_upload.png
+ create mode 100644 app/static/images/FinalLeftTurn.png
+ create mode 100644 app/static/images/FinalRoadWork.png
+ create mode 100644 app/static/images/FinalSchoolZone.png
+ create mode 100644 app/static/images/FinalStop.png
+ create mode 100644 app/static/images/FinalU-Turn.png
+ create mode 100644 app/static/images/FinalWindingRoad.png
+ create mode 100644 app/static/images/Hana_4.jpg
+ create mode 100644 app/static/images/JustinW.png
+ create mode 100644 app/static/images/Luke_upload.jpg
+ create mode 100644 app/static/images/NorthAmericaMap.png
+ create mode 100644 app/static/images/ScreenShot2021-07-17at4.34.03PM.png
+ create mode 100644 app/static/images/ScreenShot2021-07-19at4.06.41PM.png
+ create mode 100644 app/static/images/Snapchat-1296061087__01__01__01.jpg
+ create mode 100644 app/static/images/co.png
+ create mode 100644 app/static/images/default-image.jpg
+ create mode 100644 app/static/images/gradient.png
+ create mode 100644 app/static/images/mountain.png
+ create mode 100644 app/static/images/nonmax.png
+ rewrite app/static/jquery.js (98%)
+ rewrite app/static/nicepage.js (95%)
+ create mode 100644 app/static/output.mp3
+ create mode 100644 app/static/page.json
+ create mode 100644 app/static/results.css
+ rewrite app/templates/home.html (71%)
+ copy app/templates/{home.html => home2.html} (99%)
+ create mode 100644 app/templates/results2.html
+ create mode 100644 app/textToSpeech.py
+ create mode 100644 app/translation.py
+ create mode 100644 app/yolo/traffic_sign_detector.names
+ delete mode 100644 app/yolo/weights_location
+ create mode 100644 app/yolo/weights_location.txt
+ delete mode 100644 app/yolo/yolo.names
+ rename app/yolo/{yolo.cfg => yolov4.cfg} (58%)
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git push
+Username for 'https://github.com': ^[[Alg ^[[H^[[H             LoganFortune2
+Password for 'https://LoganFortune2@github.com': 
+Enumerating objects: 103, done.
+Counting objects:   0% (1/103)Counting objects:   1% (2/103)Counting objects:   2% (3/103)Counting objects:   3% (4/103)Counting objects:   4% (5/103)Counting objects:   5% (6/103)Counting objects:   6% (7/103)Counting objects:   7% (8/103)Counting objects:   8% (9/103)Counting objects:   9% (10/103)Counting objects:  10% (11/103)Counting objects:  11% (12/103)Counting objects:  12% (13/103)Counting objects:  13% (14/103)Counting objects:  14% (15/103)Counting objects:  15% (16/103)Counting objects:  16% (17/103)Counting objects:  17% (18/103)Counting objects:  18% (19/103)Counting objects:  19% (20/103)Counting objects:  20% (21/103)Counting objects:  21% (22/103)Counting objects:  22% (23/103)Counting objects:  23% (24/103)Counting objects:  24% (25/103)Counting objects:  25% (26/103)Counting objects:  26% (27/103)Counting objects:  27% (28/103)Counting objects:  28% (29/103)Counting objects:  29% (30/103)Counting objects:  30% (31/103)Counting objects:  31% (32/103)Counting objects:  32% (33/103)Counting objects:  33% (34/103)Counting objects:  34% (36/103)Counting objects:  35% (37/103)Counting objects:  36% (38/103)Counting objects:  37% (39/103)Counting objects:  38% (40/103)Counting objects:  39% (41/103)Counting objects:  40% (42/103)Counting objects:  41% (43/103)Counting objects:  42% (44/103)Counting objects:  43% (45/103)Counting objects:  44% (46/103)Counting objects:  45% (47/103)Counting objects:  46% (48/103)Counting objects:  47% (49/103)Counting objects:  48% (50/103)Counting objects:  49% (51/103)Counting objects:  50% (52/103)Counting objects:  51% (53/103)Counting objects:  52% (54/103)Counting objects:  53% (55/103)Counting objects:  54% (56/103)Counting objects:  55% (57/103)Counting objects:  56% (58/103)Counting objects:  57% (59/103)Counting objects:  58% (60/103)Counting objects:  59% (61/103)Counting objects:  60% (62/103)Counting objects:  61% (63/103)Counting objects:  62% (64/103)Counting objects:  63% (65/103)Counting objects:  64% (66/103)Counting objects:  65% (67/103)Counting objects:  66% (68/103)Counting objects:  67% (70/103)Counting objects:  68% (71/103)Counting objects:  69% (72/103)Counting objects:  70% (73/103)Counting objects:  71% (74/103)Counting objects:  72% (75/103)Counting objects:  73% (76/103)Counting objects:  74% (77/103)Counting objects:  75% (78/103)Counting objects:  76% (79/103)Counting objects:  77% (80/103)Counting objects:  78% (81/103)Counting objects:  79% (82/103)Counting objects:  80% (83/103)Counting objects:  81% (84/103)Counting objects:  82% (85/103)Counting objects:  83% (86/103)Counting objects:  84% (87/103)Counting objects:  85% (88/103)Counting objects:  86% (89/103)Counting objects:  87% (90/103)Counting objects:  88% (91/103)Counting objects:  89% (92/103)Counting objects:  90% (93/103)Counting objects:  91% (94/103)Counting objects:  92% (95/103)Counting objects:  93% (96/103)Counting objects:  94% (97/103)Counting objects:  95% (98/103)Counting objects:  96% (99/103)Counting objects:  97% (100/103)Counting objects:  98% (101/103)Counting objects:  99% (102/103)Counting objects: 100% (103/103)Counting objects: 100% (103/103), done.
+Delta compression using up to 8 threads
+Compressing objects:   1% (1/87)Compressing objects:   2% (2/87)Compressing objects:   3% (3/87)Compressing objects:   4% (4/87)Compressing objects:   5% (5/87)Compressing objects:   6% (6/87)Compressing objects:   8% (7/87)Compressing objects:   9% (8/87)Compressing objects:  10% (9/87)Compressing objects:  11% (10/87)Compressing objects:  12% (11/87)Compressing objects:  13% (12/87)Compressing objects:  14% (13/87)Compressing objects:  16% (14/87)Compressing objects:  17% (15/87)Compressing objects:  18% (16/87)Compressing objects:  19% (17/87)Compressing objects:  20% (18/87)Compressing objects:  21% (19/87)Compressing objects:  22% (20/87)Compressing objects:  24% (21/87)Compressing objects:  25% (22/87)Compressing objects:  26% (23/87)Compressing objects:  27% (24/87)Compressing objects:  28% (25/87)Compressing objects:  29% (26/87)Compressing objects:  31% (27/87)Compressing objects:  32% (28/87)Compressing objects:  33% (29/87)Compressing objects:  34% (30/87)Compressing objects:  35% (31/87)Compressing objects:  36% (32/87)Compressing objects:  37% (33/87)Compressing objects:  39% (34/87)Compressing objects:  40% (35/87)Compressing objects:  41% (36/87)Compressing objects:  42% (37/87)Compressing objects:  43% (38/87)Compressing objects:  44% (39/87)Compressing objects:  45% (40/87)Compressing objects:  47% (41/87)Compressing objects:  48% (42/87)Compressing objects:  49% (43/87)Compressing objects:  50% (44/87)Compressing objects:  51% (45/87)Compressing objects:  52% (46/87)Compressing objects:  54% (47/87)Compressing objects:  55% (48/87)Compressing objects:  56% (49/87)Compressing objects:  57% (50/87)Compressing objects:  58% (51/87)Compressing objects:  59% (52/87)Compressing objects:  60% (53/87)Compressing objects:  62% (54/87)Compressing objects:  63% (55/87)Compressing objects:  64% (56/87)Compressing objects:  65% (57/87)Compressing objects:  66% (58/87)Compressing objects:  67% (59/87)Compressing objects:  68% (60/87)Compressing objects:  70% (61/87)Compressing objects:  71% (62/87)Compressing objects:  72% (63/87)Compressing objects:  73% (64/87)Compressing objects:  74% (65/87)Compressing objects:  75% (66/87)Compressing objects:  77% (67/87)Compressing objects:  78% (68/87)Compressing objects:  79% (69/87)Compressing objects:  80% (70/87)Compressing objects:  81% (71/87)Compressing objects:  82% (72/87)Compressing objects:  83% (73/87)Compressing objects:  85% (74/87)Compressing objects:  86% (75/87)Compressing objects:  87% (76/87)Compressing objects:  88% (77/87)Compressing objects:  89% (78/87)Compressing objects:  90% (79/87)Compressing objects:  91% (80/87)Compressing objects:  93% (81/87)Compressing objects:  94% (82/87)Compressing objects:  95% (83/87)Compressing objects:  96% (84/87)Compressing objects:  97% (85/87)Compressing objects:  98% (86/87)Compressing objects: 100% (87/87)Compressing objects: 100% (87/87), done.
+Writing objects:   1% (1/88)Writing objects:   2% (2/88)Writing objects:   3% (3/88)Writing objects:   4% (4/88)Writing objects:   5% (5/88)Writing objects:   6% (6/88)Writing objects:   7% (7/88)Writing objects:   9% (8/88)Writing objects:  10% (9/88)Writing objects:  11% (10/88)Writing objects:  12% (11/88)Writing objects:  13% (12/88)Writing objects:  14% (13/88)Writing objects:  15% (14/88), 1.05 MiB | 1.10 MiB/sWriting objects:  17% (15/88), 1.05 MiB | 1.10 MiB/sWriting objects:  18% (16/88), 1.05 MiB | 1.10 MiB/sWriting objects:  19% (17/88), 1.05 MiB | 1.10 MiB/sWriting objects:  20% (18/88), 1.05 MiB | 1.10 MiB/sWriting objects:  21% (19/88), 1.05 MiB | 1.10 MiB/sWriting objects:  22% (20/88), 1.05 MiB | 1.10 MiB/sWriting objects:  23% (21/88), 7.22 MiB | 4.64 MiB/sWriting objects:  25% (22/88), 7.22 MiB | 4.64 MiB/sWriting objects:  26% (23/88), 7.22 MiB | 4.64 MiB/sWriting objects:  27% (24/88), 7.22 MiB | 4.64 MiB/sWriting objects:  28% (25/88), 7.22 MiB | 4.64 MiB/sWriting objects:  29% (26/88), 7.22 MiB | 4.64 MiB/sWriting objects:  30% (27/88), 7.22 MiB | 4.64 MiB/sWriting objects:  31% (28/88), 7.22 MiB | 4.64 MiB/sWriting objects:  32% (29/88), 7.22 MiB | 4.64 MiB/sWriting objects:  34% (30/88), 7.22 MiB | 4.64 MiB/sWriting objects:  35% (31/88), 7.22 MiB | 4.64 MiB/sWriting objects:  36% (32/88), 7.22 MiB | 4.64 MiB/sWriting objects:  37% (33/88), 7.22 MiB | 4.64 MiB/sWriting objects:  38% (34/88), 7.22 MiB | 4.64 MiB/sWriting objects:  39% (35/88), 7.22 MiB | 4.64 MiB/sWriting objects:  40% (36/88), 7.22 MiB | 4.64 MiB/sWriting objects:  42% (37/88), 7.22 MiB | 4.64 MiB/sWriting objects:  42% (37/88), 16.52 MiB | 7.57 MiB/sWriting objects:  43% (38/88), 16.52 MiB | 7.57 MiB/sWriting objects:  44% (39/88), 16.52 MiB | 7.57 MiB/sWriting objects:  45% (40/88), 16.52 MiB | 7.57 MiB/sWriting objects:  46% (41/88), 16.52 MiB | 7.57 MiB/sWriting objects:  47% (42/88), 16.52 MiB | 7.57 MiB/sWriting objects:  48% (43/88), 16.52 MiB | 7.57 MiB/sWriting objects:  50% (44/88), 16.52 MiB | 7.57 MiB/sWriting objects:  51% (45/88), 16.52 MiB | 7.57 MiB/sWriting objects:  52% (46/88), 16.52 MiB | 7.57 MiB/sWriting objects:  53% (47/88), 16.52 MiB | 7.57 MiB/sWriting objects:  54% (48/88), 16.52 MiB | 7.57 MiB/sWriting objects:  55% (49/88), 16.52 MiB | 7.57 MiB/sWriting objects:  56% (50/88), 16.52 MiB | 7.57 MiB/sWriting objects:  57% (51/88), 16.52 MiB | 7.57 MiB/sWriting objects:  59% (52/88), 16.52 MiB | 7.57 MiB/sWriting objects:  60% (53/88), 16.52 MiB | 7.57 MiB/sWriting objects:  61% (54/88), 16.52 MiB | 7.57 MiB/sWriting objects:  62% (55/88), 16.52 MiB | 7.57 MiB/sWriting objects:  63% (56/88), 16.52 MiB | 7.57 MiB/sWriting objects:  64% (57/88), 16.52 MiB | 7.57 MiB/sWriting objects:  65% (58/88), 16.52 MiB | 7.57 MiB/sWriting objects:  67% (59/88), 16.52 MiB | 7.57 MiB/sWriting objects:  68% (60/88), 16.52 MiB | 7.57 MiB/sWriting objects:  69% (61/88), 16.52 MiB | 7.57 MiB/sWriting objects:  70% (62/88), 16.52 MiB | 7.57 MiB/sWriting objects:  71% (63/88), 16.52 MiB | 7.57 MiB/sWriting objects:  72% (64/88), 16.52 MiB | 7.57 MiB/sWriting objects:  73% (65/88), 16.52 MiB | 7.57 MiB/sWriting objects:  75% (66/88), 16.52 MiB | 7.57 MiB/sWriting objects:  76% (67/88), 29.34 MiB | 10.92 MiB/sWriting objects:  77% (68/88), 29.34 MiB | 10.92 MiB/sWriting objects:  78% (69/88), 29.34 MiB | 10.92 MiB/sWriting objects:  79% (70/88), 29.34 MiB | 10.92 MiB/sWriting objects:  80% (71/88), 29.34 MiB | 10.92 MiB/sWriting objects:  81% (72/88), 29.34 MiB | 10.92 MiB/sWriting objects:  82% (73/88), 29.34 MiB | 10.92 MiB/sWriting objects:  84% (74/88), 29.34 MiB | 10.92 MiB/sWriting objects:  85% (75/88), 29.34 MiB | 10.92 MiB/sWriting objects:  86% (76/88), 29.34 MiB | 10.92 MiB/sWriting objects:  87% (77/88), 29.34 MiB | 10.92 MiB/sWriting objects:  88% (78/88), 29.34 MiB | 10.92 MiB/sWriting objects:  89% (79/88), 29.34 MiB | 10.92 MiB/sWriting objects:  90% (80/88), 29.34 MiB | 10.92 MiB/sWriting objects:  92% (81/88), 29.34 MiB | 10.92 MiB/sWriting objects:  93% (82/88), 29.34 MiB | 10.92 MiB/sWriting objects:  94% (83/88), 29.34 MiB | 10.92 MiB/sWriting objects:  95% (84/88), 29.34 MiB | 10.92 MiB/sWriting objects:  96% (85/88), 29.34 MiB | 10.92 MiB/sWriting objects:  97% (86/88), 29.34 MiB | 10.92 MiB/sWriting objects:  98% (87/88), 29.34 MiB | 10.92 MiB/sWriting objects: 100% (88/88), 29.34 MiB | 10.92 MiB/sWriting objects: 100% (88/88), 29.88 MiB | 10.91 MiB/s, done.
+Total 88 (delta 6), reused 5 (delta 0)
+remote: Resolving deltas:   0% (0/6)[Kremote: Resolving deltas:  16% (1/6)[Kremote: Resolving deltas:  33% (2/6)[Kremote: Resolving deltas:  50% (3/6)[Kremote: Resolving deltas:  66% (4/6)[Kremote: Resolving deltas:  83% (5/6)[Kremote: Resolving deltas: 100% (6/6)[Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/LoganFortune2/native-navigator.git
+   6cdf2a4..226d4be  master -> master
+]0;~/native-navigator[01;34m~/native-navigator[00m$ git push^?[K[K[K[K[K[K[K[K[Kt]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ [K]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ [K]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12349/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+127.0.0.1 - - [22/Jul/2021 17:18:51] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:18:51] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:18:51] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:18:54] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:18:54] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:18:54] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:18:56] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:18:56] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:18:56] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 54
+    f.close() f.write("This is line %d\r\n" % (i+1))f= open("guru99.txt","w+")
+              ^
+SyntaxError: invalid syntax
+]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ [K]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12349/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+127.0.0.1 - - [22/Jul/2021 17:23:36] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:23:37] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:23:37] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 66
+    f= open(,"w+")
+            ^
+SyntaxError: invalid syntax
+]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12349/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+127.0.0.1 - - [22/Jul/2021 17:30:40] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:30:40] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:30:40] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:30:47] "[32mPOST /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.602568 seconds
+[0, 0, 0, 0, 0, 0]
+[[76, 37, 1316, 1294], [70, 27, 1326, 1312], [-33, 65, 1443, 1352], [-19, 67, 1414, 1348], [47, 71, 1373, 1335], [42, 55, 1384, 1367]]
+[0.5559176802635193, 0.6076088547706604, 0.7058418393135071, 0.7645694613456726, 0.999376654624939, 0.9994807243347168]
+[[5]]
+after NMS, we have these indices
+[5]
+stop sign
+127.0.0.1 - - [22/Jul/2021 17:30:48] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 116, in results
+    langLine = f.readline()
+NameError: name 'f' is not defined
+127.0.0.1 - - [22/Jul/2021 17:30:49] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:30:49] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:30:49] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:30:49] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:30:49] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 122
+    langId = langabbreviated[lang]
+    ^
+IndentationError: expected an indented block
+]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ python3 main.py
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+[31m   WARNING: This is a development server. Do not use it in a production deployment.[0m
+[2m   Use a production WSGI server instead.[0m
+ * Debug mode: on
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.17.0.2:12349/ (Press CTRL+C to quit)
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+127.0.0.1 - - [22/Jul/2021 17:31:39] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:31:39] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:31:39] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:31:44] "[32mPOST /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.583987 seconds
+[0, 0, 0, 0, 0, 0]
+[[76, 37, 1316, 1294], [70, 27, 1326, 1312], [-33, 65, 1443, 1352], [-19, 67, 1414, 1348], [47, 71, 1373, 1335], [42, 55, 1384, 1367]]
+[0.5559176802635193, 0.6076088547706604, 0.7058418393135071, 0.7645694613456726, 0.999376654624939, 0.9994807243347168]
+[[5]]
+after NMS, we have these indices
+[5]
+stop sign
+127.0.0.1 - - [22/Jul/2021 17:31:45] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 115, in results
+    f = open("txtFileName", "r") #syntax will write first and then change
+FileNotFoundError: [Errno 2] No such file or directory: 'txtFileName'
+127.0.0.1 - - [22/Jul/2021 17:31:45] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:31:45] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:31:45] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:31:45] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+127.0.0.1 - - [22/Jul/2021 17:32:02] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:32:02] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:32:02] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:32:06] "[32mPOST /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.649573 seconds
+[0, 0, 0, 0, 0, 0]
+[[76, 37, 1316, 1294], [70, 27, 1326, 1312], [-33, 65, 1443, 1352], [-19, 67, 1414, 1348], [47, 71, 1373, 1335], [42, 55, 1384, 1367]]
+[0.5559176802635193, 0.6076088547706604, 0.7058418393135071, 0.7645694613456726, 0.999376654624939, 0.9994807243347168]
+[[5]]
+after NMS, we have these indices
+[5]
+stop sign
+127.0.0.1 - - [22/Jul/2021 17:32:07] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 117, in results
+    lang = language.lower(langLine)
+NameError: name 'language' is not defined
+127.0.0.1 - - [22/Jul/2021 17:32:07] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:32:07] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:32:07] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:32:07] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+127.0.0.1 - - [22/Jul/2021 17:32:40] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:32:40] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:32:40] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:32:46] "[32mPOST /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.582994 seconds
+[0, 0, 0, 0, 0, 0]
+[[76, 37, 1316, 1294], [70, 27, 1326, 1312], [-33, 65, 1443, 1352], [-19, 67, 1414, 1348], [47, 71, 1373, 1335], [42, 55, 1384, 1367]]
+[0.5559176802635193, 0.6076088547706604, 0.7058418393135071, 0.7645694613456726, 0.999376654624939, 0.9994807243347168]
+[[5]]
+after NMS, we have these indices
+[5]
+stop sign
+LABELS: 
+Stop sign
+<class 'str'>
+Stop sign
+HEREtranslatedWord = لافتة توقف
+HERElangID = ar
+Audio content written to file "output.mp3"
+127.0.0.1 - - [22/Jul/2021 17:32:49] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:32:49] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/Page-1.css HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 87, in results
+    (class_ids, labels, boxes, confidences) = yolo_forward(net, LABELS, image, confidence_level=0.3)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/ai.py", line 33, in yolo_forward
+    (H, W) = image.shape[:2]
+AttributeError: 'NoneType' object has no attribute 'shape'
+127.0.0.1 - - [22/Jul/2021 17:32:49] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/jquery.js HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 87, in results
+    (class_ids, labels, boxes, confidences) = yolo_forward(net, LABELS, image, confidence_level=0.3)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/ai.py", line 33, in yolo_forward
+    (H, W) = image.shape[:2]
+AttributeError: 'NoneType' object has no attribute 'shape'
+127.0.0.1 - - [22/Jul/2021 17:32:49] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/nicepage.js HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 87, in results
+    (class_ids, labels, boxes, confidences) = yolo_forward(net, LABELS, image, confidence_level=0.3)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/ai.py", line 33, in yolo_forward
+    (H, W) = image.shape[:2]
+AttributeError: 'NoneType' object has no attribute 'shape'
+127.0.0.1 - - [22/Jul/2021 17:32:49] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/output.mp3 HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:32:49] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/files/yolo_81dhrXbZyDL._AC_SL1500_.jpg HTTP/1.1" 200 -
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Try to open
+
+    https://cocalc4.ai-camp.org/a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/
+
+
+ * Debugger is active!
+ * Debugger PIN: 342-103-133
+127.0.0.1 - - [22/Jul/2021 17:33:50] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/Home.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/jquery.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[33mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/nicepage.js HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/mountain.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/FinalRoadWork.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/FinalU-Turn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/FinalSchoolZone.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/FinalStop.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/FinalLeftTurn.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/FinalWindingRoad.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/NorthAmericaMap.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/co.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/ScreenShot2021-07-17at4.34.03PM.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/nonmax.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/gradient.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/Antonio_upload.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/Snapchat-1296061087__01__01__01.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/Luke_upload.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/Hana_4.jpg HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/Druthi_upload.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/ScreenShot2021-07-19at4.06.41PM.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:50] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/JustinW.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:33:58] "[32mPOST /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/ HTTP/1.1[0m" 302 -
+[INFO] YOLO took 0.668263 seconds
+[0, 0, 0, 0, 0, 0]
+[[76, 37, 1316, 1294], [70, 27, 1326, 1312], [-33, 65, 1443, 1352], [-19, 67, 1414, 1348], [47, 71, 1373, 1335], [42, 55, 1384, 1367]]
+[0.5559176802635193, 0.6076088547706604, 0.7058418393135071, 0.7645694613456726, 0.999376654624939, 0.9994807243347168]
+[[5]]
+after NMS, we have these indices
+[5]
+stop sign
+LABELS: 
+Stop sign
+<class 'str'>
+Stop sign
+HEREtranslatedWord = Segnale di stop
+HERElangID = it
+Audio content written to file "output.mp3"
+127.0.0.1 - - [22/Jul/2021 17:34:00] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/81dhrXbZyDL._AC_SL1500_.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/nicepage.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/results.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/Page-1.css HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 87, in results
+    (class_ids, labels, boxes, confidences) = yolo_forward(net, LABELS, image, confidence_level=0.3)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/ai.py", line 33, in yolo_forward
+    (H, W) = image.shape[:2]
+AttributeError: 'NoneType' object has no attribute 'shape'
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/jquery.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/nicepage.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/jquery.js HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 87, in results
+    (class_ids, labels, boxes, confidences) = yolo_forward(net, LABELS, image, confidence_level=0.3)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/ai.py", line 33, in yolo_forward
+    (H, W) = image.shape[:2]
+AttributeError: 'NoneType' object has no attribute 'shape'
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/uploads/nicepage.js HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/.local/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 87, in results
+    (class_ids, labels, boxes, confidences) = yolo_forward(net, LABELS, image, confidence_level=0.3)
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/ai.py", line 33, in yolo_forward
+    (H, W) = image.shape[:2]
+AttributeError: 'NoneType' object has no attribute 'shape'
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[36mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/images/mountain.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [22/Jul/2021 17:34:00] "[35m[1mGET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/static/output.mp3 HTTP/1.1[0m" 206 -
+127.0.0.1 - - [22/Jul/2021 17:34:00] "GET /a393710e-7e62-47f1-abc5-305c9c32e179/port/12349/files/yolo_81dhrXbZyDL._AC_SL1500_.jpg HTTP/1.1" 200 -
+ * Detected change in '/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py', reloading
+ * Restarting with stat
+[INFO] loading YOLO from disk...
+Traceback (most recent call last):
+  File "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/main.py", line 45, in <module>
+    @app.route(base_url)
+NameError: name 'base_url' is not defined
+]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ [K]0;~/native-navigator/app[01;34m~/native-navigator/app[00m$ 

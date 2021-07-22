@@ -17,9 +17,9 @@ from utils import get_base_url, allowed_file, and_syntax
     port may need to be changed if there are multiple flask servers running on same server
     comment out below three lines of code when ready for production deployment
 '''
-#port = 12349
-#base_url = get_base_url(port)
-#app = Flask(__name__, static_url_path=base_url+'static')
+# port = 12349
+# base_url = get_base_url(port)
+# app = Flask(__name__, static_url_path=base_url+'static')
 
 '''
     cv scaffold code
@@ -41,23 +41,32 @@ weights_path = os.path.join('yolo', 'yolov4_final.weights')
 cfg_path = os.path.join('yolo', 'yolov4.cfg')
 net = get_yolo_net(cfg_path, weights_path)
 
-language = ""
 @app.route('/')
-#@app.route(base_url)
+# @app.route(base_url)
 def home():
     return render_template('home.html')
 
 @app.route('/', methods=['POST'])
-#@app.route(base_url, methods=['POST'])
+# @app.route(base_url, methods=['POST'])
 def home_post():
-    global language
     language = request.form['username']
+    #write to text file
+      
+
+
+    
     # check if the post request has the file part
     if 'file' not in request.files:
         flash('No file part')
         return redirect(request.url)
 
     file = request.files['file']
+    
+    cutOff = file.filename.find(".")
+    txtFileName0 = file.filename[0:cutOff]
+    txtFileName = txtFileName0 + ".txt"
+    f= open(txtFileName,"w+")
+    f.write(language)
     # if user does not select file, browser also
     # submit an empty part without filename
     if file.filename == '':
@@ -71,7 +80,7 @@ def home_post():
 
 
 @app.route('/uploads/<filename>')
-#@app.route(base_url + '/uploads/<filename>')
+# @app.route(base_url + '/uploads/<filename>')
 def results(filename):
     image_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     image = cv2.imread(image_path)
@@ -98,8 +107,18 @@ def results(filename):
         langabbreviated = {'arabic':'ar','chinese (simplified)':'zh','french':'fr','german':'de', 'hebrew':'he', 'italian':'it', 'japanese':'ja', 'korean':'ko', 'spanish':'es'}
 
        # transSign = []
-        global language
-        lang = language.lower()
+        #open a text file, and read it, set it to lang
+        cutOff = filename.find(".")
+        txtFileName0 = filename[0:cutOff]
+        txtFileName = txtFileName0 + ".txt"
+    
+        f = open(txtFileName, "r") #syntax will write first and then change
+        langLine = f.readline()
+        lang = langLine.lower()
+
+        if lang == "":
+            lang = "es"
+        
         langId = langabbreviated[lang]
         transTotal = []
         strLabels = str(labels)
@@ -122,7 +141,7 @@ def results(filename):
         return render_template('results.html', labels='No Objects', old_filename=filename, filename=filename) 
 
 @app.route('/files/<path:filename>')
-#@app.route(base_url + '/files/<path:filename>')
+# @app.route(base_url + '/files/<path:filename>')
 def files(filename):
     return send_from_directory(UPLOAD_FOLDER, filename, as_attachment=True)
 
@@ -135,7 +154,7 @@ if __name__ == "__main__":
     print(f"Try to open\n\n    https://{website_url}" + base_url + '\n\n')
 
     # remove debug=True when deploying it
-    app.run(host = '0.0.0.0', port=port, debug=True)
+    app.run(host = '0.0.0.0', port=port)
     import sys; sys.exit(0)
 
     '''
