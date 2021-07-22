@@ -14,7 +14,8 @@ def get_yolo_net(cfg_path, weight_path):
         raise Exception('missing inputs. See file.')
 
     print('[INFO] loading YOLO from disk...')
-    net = cv2.dnn.readNetFromDarknet(cfg_path, weight_path)
+    #path /projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/yolo
+    net = cv2.dnn.readNetFromDarknet("/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/yolo/yolov4.cfg", "/projects/a393710e-7e62-47f1-abc5-305c9c32e179/native-navigator/app/yolo/yolov4_last.weights")
 
     return net
 
@@ -88,18 +89,43 @@ def yolo_forward(net, LABELS, image, confidence_level, save_image=False):
 
     # apply non-maxima suppression to suppress weak, overlapping bounding
     # boxes
-    # idxs = cv2.dnn.NMSBoxes(boxes, confidences, confidence_level, threshold)
+    idxs = cv2.dnn.NMSBoxes(boxes, confidences, confidence_level, confidence_level)
 
     print(class_ids)
-    print(LABELS)
-    # print(labels)
+    print(boxes)
+    print(confidences)
+    print(idxs)
 
-    labels = [LABELS[i] for i in class_ids]
+    #if idxs is size 1: [5]
+    #id idxs > 1: [[10], [12]]
+    #change [[10], [12]] -----> [10, 12]
+    #do that to idxs
+    #then set filtered_idxs = idxs
+    # i = [10]
+    
+    filtered_idxs = []
+    for i in idxs:
+        filtered_idxs.append(i[0]) #i added [0]
+    print('after NMS, we have these indices')
+    print(filtered_idxs) #we should test this i got sort of confused b/c do you think i might be a list? NVMi added [0] hopefully it doesn't break
+    
+#     if len(idxs) > 0:
+#         filtered_idxs = idxs[0]
+#         print('after NMS, we have these indices')
+#         print(filtered_idxs)
+#     else: 
+#         filtered_idxs = []
+
+    nms_class_ids = [class_ids[i] for i in filtered_idxs]
+    nms_boxes = [boxes[i] for i in filtered_idxs]
+    nms_confidences = [confidences[i] for i in filtered_idxs]
+
+    labels = [LABELS[i] for i in nms_class_ids]
 
     if save_image:
-        yolo_save_img(image, class_ids, boxes, labels, confidences, colors, 'python_predictions.jpg')
+        yolo_save_img(image, class_ids, nms_boxes, labels, confidences, colors, 'python_predictions.jpg')
 
-    return class_ids, labels, boxes, confidences
+    return nms_class_ids, labels, nms_boxes, nms_confidences
 
 
 def yolo_save_img(image, class_ids, boxes, labels, confidences, colors, file_path):
